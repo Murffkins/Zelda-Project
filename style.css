@@ -1,0 +1,165 @@
+#homeLogo {
+  /* animation: swing 2s infinite ease-in-out; */
+  /* grid-area: header; */
+  width:20%;
+  min-width: 100px;
+  /* grid-column: 1/2; */
+}
+
+#homeLogo:hover {
+  animation: swing 1s infinite ease-in-out;
+}
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-30deg); }
+  20% {transform:scale(.95);}
+  50% { transform: rotate(30deg); }
+  80% {transform:scale(.95);}
+
+}
+
+#titleLogoDiv {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  display: grid;
+}
+
+#titleLogo {
+  justify-self: center;
+  width: 40%;
+  min-height: 150px;
+  min-width:150px;
+}
+
+#hearts {
+  min-width: 100px;
+  max-width:150px;
+  padding-top: 25px;
+  justify-self: end;
+  /* align-self: center; */
+}
+
+#hearts:hover {
+  animation: grow 8s ease-out infinite;
+}
+
+div.favorites a {
+  display: grid;
+}
+
+
+  
+/* mobile view */
+#body_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+}
+
+#header {
+  /* grid-column: 1/2; */
+  grid-row:1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* padding-bottom: 5px; */
+  border-bottom: 1px solid black;
+  min-height:150px;
+}
+
+#footer {
+  /* grid-column: 1/2; */
+  grid-row: 3/4;
+  border-top: 1px solid black;;
+  margin-top: 20px;
+}
+
+#logo {
+  grid-column: 1/2;
+}
+
+#favorites {
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+#main_container {
+  background-image: linear-gradient(rgb(129, 231, 129), rgba(255, 255, 0, 0.5)), url("../images/zelda-logo-shiny.png");
+  background-repeat: space;
+  /* background-position: 50% 50%; */
+  background-size: contain;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  grid-row: 2/3;
+  display: grid;
+  /* grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr; */
+}
+
+#hero_image_div {
+  /* grid-column:2/4;
+  grid-row: 1/2; */
+  display: grid;
+  /* height:50% */
+}
+
+#hero_image {
+  justify-self: center;
+  /* height:50%; */
+}
+
+#categories {
+  /* grid-column: 2/4;
+  grid-row: 2/3; */
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  justify-self: center;
+}
+
+.link {
+  border: 3px ridge rgb(16, 64, 26);
+  border-radius: 25px;
+  padding: 2px 20px;
+  margin: 2px;
+  justify-self: center;
+ }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li #record-image {
+  padding-left: 30%;
+}
+
+#categories-list {
+  column-count: 3;
+  column-gap: 30px;
+  text-align: center;
+  padding-right: 30px;
+}
+
+#categories-list li {
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: darkolivegreen;
+  margin-bottom: 2px;
+}
+
+#categories-list li a {
+  color: rgb(240, 238, 238);
+  /* -webkit-text-stroke-width: .1px; */
+  /* -webkit-text-stroke-color: grey; */
+}
+
+
+
