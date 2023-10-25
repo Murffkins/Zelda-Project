@@ -4,8 +4,6 @@ let id = params.get('id');
 let entry = null;
 
 
-
-// fetch("https://zelda.fanapis.com/api/" + category + "/" + id)
 fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/entry/" + id)
     .then(res => {
         return res.json();
@@ -14,11 +12,9 @@ fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/entry/" + id)
     //   console.log(data);
 
       entry = data;
-    // let markup = `<li>Name: ${data.data.name}</li>`;
     let markup = `<li><img id="record-image" src='${data.data.image}' /></li>`;
 
     if (data.data.image){
-        // markup+= `<li><img src='${data.data.image}' /></li>`;
         markup+= `<li><b><u>Name:</u></b> ${data.data.name}</li>`;
     }
     
@@ -65,32 +61,6 @@ fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/entry/" + id)
         });
         markup += '</ul></li>';
     }
-    
-    
-
-    // if (data.data.creatures){
-    //     markup+= `<li>Creature: ${data.data.creatures}</li>`;
-    // }
-    
-    // if (data.data.developer){
-    //     markup+= `<li>Developer: ${data.data.developer}</li>`;
-    // }
-
-    // if (data.data.publisher){
-    //     markup+= `<li>Publisher: ${data.data.publisher}</li>`;
-    // }
-
-    // if (data.data.released_date){
-    //     markup+= `<li>Release Date: ${data.data.released_date}</li>`;
-    // }
-
-    // if (data.data.gender){
-    //     markup+= `<li>Gender: ${data.data.gender}</li>`;
-    // }
-
-    // if (data.data.race){
-    //     markup+= `<li>Race: ${data.data.race}</li>`;
-    // }
 
     let unorderedList = document.querySelector('ul');
     if (unorderedList) {
@@ -156,4 +126,4 @@ function getLocalStorage(key) {
     return JSON.parse(localStorage.getItem(key));
 }
 
-// addFavorite();
+

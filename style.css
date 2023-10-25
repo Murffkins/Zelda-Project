@@ -1,9 +1,6 @@
 #homeLogo {
-  /* animation: swing 2s infinite ease-in-out; */
-  /* grid-area: header; */
   width:20%;
   min-width: 100px;
-  /* grid-column: 1/2; */
 }
 
 #homeLogo:hover {
@@ -41,7 +38,6 @@
   max-width:150px;
   padding-top: 25px;
   justify-self: end;
-  /* align-self: center; */
 }
 
 #hearts:hover {
@@ -54,7 +50,7 @@ div.favorites a {
 
 
   
-/* mobile view */
+/* Dynamic View */
 #body_container {
   display: grid;
   grid-template-columns: 1fr;
@@ -62,7 +58,6 @@ div.favorites a {
 }
 
 #header {
-  /* grid-column: 1/2; */
   grid-row:1/2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -72,7 +67,6 @@ div.favorites a {
 }
 
 #footer {
-  /* grid-column: 1/2; */
   grid-row: 3/4;
   border-top: 1px solid black;;
   margin-top: 20px;
@@ -91,33 +85,23 @@ div.favorites a {
 #main_container {
   background-image: linear-gradient(rgb(129, 231, 129), rgba(255, 255, 0, 0.5)), url("../images/zelda-logo-shiny.png");
   background-repeat: space;
-  /* background-position: 50% 50%; */
   background-size: contain;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
   grid-row: 2/3;
   display: grid;
-  /* grid-template-columns: 1fr, 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr; */
 }
 
 #hero_image_div {
-  /* grid-column:2/4;
-  grid-row: 1/2; */
   display: grid;
-  /* height:50% */
 }
 
 #hero_image {
   justify-self: center;
-  /* height:50%; */
 }
 
 #categories {
-  /* grid-column: 2/4;
-  grid-row: 2/3; */
   display: grid;
-  /* grid-template-columns: 1fr; */
   justify-self: center;
 }
 
@@ -157,8 +141,6 @@ ul li #record-image {
 
 #categories-list li a {
   color: rgb(240, 238, 238);
-  /* -webkit-text-stroke-width: .1px; */
-  /* -webkit-text-stroke-color: grey; */
 }
 
 

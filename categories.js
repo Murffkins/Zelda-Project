@@ -2,7 +2,6 @@ let params = (new URL(document.location)).searchParams;
 let category = params.get("category");
 
 
-// fetch("https://zelda.fanapis.com/api/" + category + "?limit=50")
 fetch("https://botw-compendium.herokuapp.com/api/v3/compendium/category/" + category)
     .then(res => {
         return res.json();
